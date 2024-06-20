@@ -85,7 +85,7 @@ bool obtenerAudioDesdeSD(char* &audioBase64) {
     }
 
     // Abrir el archivo de texto con el contenido Base64
-    File archivo = SD.open("/audio_malo.txt", FILE_READ);
+    File archivo = SD.open("/encoded_audio.txt", FILE_READ);
     if (!archivo) {
         Serial.println("Error al abrir el archivo de texto");
         return false;
